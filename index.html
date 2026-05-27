@@ -7,16 +7,22 @@
 </head>
 <body>
 
-<ul>
-  <li><a href="https://sophie006liu.github.io/layer_cake/albums.html">Cooler</a></li>
-  <li><a href="https://sophie006liu.github.io/layer_cake/my_favorite_artists/index.html">My Favorite Artists</a></li>
-  <li><a href="https://sophie006liu.github.io/layer_cake/soprcolli4pres/index.html">soprocolli4pres</a></li>
-</ul>
+<div id="navbar-placeholder"></div>
 
 <h1>sophierocks821</h1> 
 <t/>
 <h1>ig @ soprocolli</h1>
 </br>
+
+<p>05/27/2026 11:35am Wednesday</p>
+<p>
+    I wanted to make my favorite artists page a little more fleshed out today. 
+    Instead I went down a rabbit hole of a blog called Anonymous Lawyer which started in 2003!
+     It's really really funny. What a great find. 
+    I like reading his fake blog post on how he likes to make law students vomit during interviews.
+    I also how his first blog post was him suspecting his coworker got botox. That's legendary.
+</p>
+</br> 
 
 <p>05/23/2026 5:58pm Saturday</p>
 <p>
@@ -431,6 +437,14 @@ causing me to grin and curl my lips inward to hold my laughter. And the best par
 <br/>
 <p>08/19/025</p>
 <p>Feeling globular</p>
+
+<script>
+    fetch('shared_utils/navbar.html')
+    .then(res => res.text())
+    .then(text => {
+        document.getElementById('navbar-placeholder').innerHTML = text;
+    });
+</script>
 </body>
 
 </html>
